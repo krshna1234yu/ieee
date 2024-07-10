@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IEEE-SFIT</title>
+	    <link rel="icon" type="image/png" href="images/ieeelogo1.png" />
+             <script src="https://kit.fontawesome.com/a2687a3fbe.js" crossorigin="anonymous"></script>
+	<style>
+	* {
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+  }
+
+  body{
+
+    font-family: sans-serif;
+
+  }
+
+  html {
+
+    font-size: 62.5%;
+
+  }
+
+  *:not(i) {
+
+    font-family: "Poppins", sans-serif;
+
+  }
+
+  header {
+
+    
+
+    width: 100%;
+
+    background:linear-gradient(to bottom,gray,purple);
+
+    padding: 3rem 5rem;
+
+  }
+
+  nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+  }
+
+  nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 2rem;
+
+  }
+
+  nav a {
+
+    font-size: 1.8rem;
+
+    text-decoration: none;
+
+  }
+
+  nav a#logo {
+
+    color: #000000;
+
+    font-weight: 700;
+
+  }
+
+  nav ul a {
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+  }
+
+  nav ul a:hover {
+
+    border-bottom: 2px solid #ffffff;
+
+  }
+
+  section#home {
+
+    height: 100vh;
+
+    display: grid;
+
+    place-items: center;
+
+    background-image: url("images\ieeelogo1.png");
+
+  }
+
+  h1 {
+
+    font-size: 4rem;
+
+  }
+
+  #ham-menu {
+
+    display: none;
+
+  }
+
+  nav ul.active {
+
+    left: 0;
+
+  }
+
+  @media only screen and (max-width: 991px) {
+
+    html {
+
+      font-size: 56.25%;
+
+    }
+
+    header {
+
+      padding: 2.2rem 5rem;
+
+    }
+
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    html {
+
+      font-size: 50%;
+
+    }
+
+    #ham-menu {
+
+      display: block;
+
+      color: #ffffff;
+
+    }
+
+    nav a#logo,
+
+    #ham-menu {
+
+      font-size: 3.2rem;
+
+    }
+
+    nav ul {
+
+      background-color: black;
+
+      position: fixed;
+
+      left: -100vw;
+
+      top: 73.6px;
+
+      width: 100vw;
+
+      height: calc(100vh - 73.6px);
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: space-around;
+
+      transition: 1s;
+
+      gap: 0;
+
+    }
+
+  }
+
+  @media only screen and (max-width: 575px) {
+
+    html {
+
+      font-size: 46.87%;
+
+    }
+
+    header {
+
+      padding: 2rem 3rem;
+
+    }
+
+    nav ul {
+
+      top: 65.18px;
+
+      height: calc(100vh - 65.18px);
+
+    }
+
+  }
+
+  .logo{
+
+    height:100px;
+
+    width:200px;
+
+  }
+
+  #io{
+
+    margin-top: 40px;
+
+  }
+
+ .about{
+
+  margin-top: 10px;
+
+    height: 900px;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+   background-color:black;
+
+   
+
+    
+
+}
+
+.ab{
+
+  height:850px ;
+
+  width: 80%;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: justify;
+
+  background-color:white;
+
+  font-size: 15px;
+
+  justify-content: space-around;
+  
+  
+
+}
+
+
+
+  * {box-sizing:border-box}
+
+
+
+  /* Slideshow container */
+
+  .slideshow-container {
+
+    max-width: 1000px;
+
+    position: relative;
+
+    margin: auto;
+
+    border-radius:10%;
+
+    height: 400px;
+
+    width: 500px;
+
+    border: 5px solid red;
+    
+    padding: 20px;
+
+
+  }
+
+  .img1{
+
+    border-radius:10%;
+
+    height: 300px;
+
+    width: 400px;
+
+
+
+  }
+
+  
+
+  /* Hide the images by default */
+
+  .mySlides {
+
+    display: none;  
+
+   
+
+  }
+  
+
+  /* Next & previous buttons */
+
+  .prev, .next {
+
+    cursor: pointer;
+
+    position: absolute;
+
+    top: 50%;
+
+    width: auto;
+
+    margin-top: -22px;
+
+    padding: 16px;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    transition: 0.6s ease;
+
+    border-radius: 0 3px 3px 0;
+
+    user-select: none;
+
+  }
+
+  
+
+  /* Position the "next button" to the right */
+
+  .next {
+
+    right: 0;
+
+    border-radius: 3px 0 0 3px;
+
+  }
+
+  
+
+  /* On hover, add a black background color with a little bit see-through */
+
+  .prev:hover, .next:hover {
+
+    background-color: rgba(0,0,0,0.8);
+
+  }
+
+  
+
+  /* Caption text */
+
+  .text {
+
+    color: #f2f2f2;
+
+    font-size: 15px;
+
+    padding: 8px 12px;
+
+    position: absolute;
+
+    bottom: 8px;
+
+    width: 100%;
+
+    text-align: center;
+
+  }
+
+  
+
+  /* Number text (1/3 etc) */
+
+  .numbertext {
+
+    color: #f2f2f2;
+
+    font-size: 12px;
+
+    padding: 8px 12px;
+
+    position: absolute;
+
+    top: 0;
+
+    
+
+  }
+
+  .mySlides fade{
+
+    border-radius:20%;
+
+    height: 500px;
+
+    width: 500px;
+
+  }
+
+  
+
+  /* The dots/bullets/indicators */
+
+  .dot {
+
+    cursor: pointer;
+
+    height: 15px;
+
+    width: 15px;
+
+    margin: 0 2px;
+
+    background-color: #bbb;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    transition: background-color 0.6s ease;
+
+  }
+
+  
+
+  .active, .dot:hover {
+
+    background-color: #717171;
+
+  }
+
+  
+
+  /* Fading animation */
+
+  .fade {
+
+    animation-name: fade;
+
+    animation-duration: 1.5s;
+
+  }
+
+  
+
+  @keyframes fade {
+
+    from {opacity: .4}
+
+    to {opacity: 1}
+
+  }
+
+  .wp{
+
+    height: 100px;
+
+    width: 100%;
+
+  }
+
+  .e{
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  .lop{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+  }
+ .red {
+
+    padding:20px;
+    height: 600px;
+    width: 800px;
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+    border:3px solid gray;
+    border-radius:30px;
+    margin:10px;
+    background-color:cyan;
+  }
+
+  .c{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: 20px;
+
+  }
+
+  .our-team {
+
+    padding: 30px 0 40px;
+
+    margin-bottom: 30px;
+
+    background-color: #f7f5ec;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+  }
+
+  
+
+  .our-team .picture {
+
+    display: inline-block;
+
+    height: 130px;
+
+    width: 130px;
+
+    margin-bottom: 50px;
+
+    z-index: 1;
+
+    position: relative;
+
+  }
+
+  
+
+  .our-team .picture::before {
+
+    content: "";
+
+    width: 100%;
+
+    height: 0;
+
+    border-radius: 50%;
+
+    background:linear-gradient(to top,red,purple);
+
+    position: absolute;
+
+    bottom: 135%;
+
+    right: 0;
+
+    left: 0;
+
+    opacity: 0.9;
+
+    transform: scale(3);
+
+    transition: all 0.3s linear 0s;
+
+  }
+
+  
+
+  .our-team:hover .picture::before {
+
+    height: 100%;
+
+  }
+
+  
+
+  .our-team .picture::after {
+
+    content: "";
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 50%;
+
+    background-color: #1369ce;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: -1;
+
+  }
+
+  
+
+  .our-team .picture img {
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 50%;
+
+    transform: scale(1);
+
+    transition: all 0.9s ease 0s;
+
+  }
+
+  
+
+  .our-team:hover .picture img {
+
+    box-shadow: 0 0 0 14px #f7f5ec;
+
+    transform: scale(0.7);
+
+  }
+
+  
+
+  .our-team .title {
+
+    display: block;
+
+    font-size: 15px;
+
+    color: #4e5052;
+
+    text-transform: capitalize;
+
+  }
+
+  
+
+  .our-team .social {
+
+    width: 100%;
+
+    padding: 0;
+
+    margin: 0;
+
+    background-color: #1369ce;
+
+    position: absolute;
+
+    bottom: -100px;
+
+    left: 0;
+
+    transition: all 0.5s ease 0s;
+
+  }
+
+  
+
+  .our-team:hover .social {
+
+    bottom: 0;
+
+  }
+
+  
+
+  .our-team .social li {
+
+    display: inline-block;
+
+  }
+
+  
+
+  .our-team .social li a {
+
+    display: block;
+
+    padding: 10px;
+
+    font-size: 17px;
+
+    color: white;
+
+    transition: all 0.3s ease 0s;
+
+    text-decoration: none;
+
+  }
+
+  
+
+  .our-team .social li a:hover {
+
+    color: #1369ce;
+
+    background-color: #f7f5ec;
+
+  }
+
+  
+
+
+
+* {
+
+  font-family: Open Sans;
+
+}
+
+
+
+section {
+
+  width: 100%;
+
+  display: inline-block;
+
+  background: #333;
+
+  height: 50vh;
+
+  text-align: center;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  text-decoration: underline;
+
+}
+
+
+
+.footer-distributed{
+
+  background: #666;
+
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+
+  box-sizing: border-box;
+
+  width: 100%;
+
+  text-align: left;
+
+  font: bold 16px sans-serif;
+
+  padding: 55px 50px;
+
+}
+
+
+
+.footer-distributed .footer-left,
+
+.footer-distributed .footer-center,
+
+.footer-distributed .footer-right{
+
+  display: inline-block;
+
+  vertical-align: top;
+
+}
+
+
+
+/* Footer left */
+
+
+
+.footer-distributed .footer-left{
+
+  width: 40%;
+
+}
+
+
+
+/* The company logo */
+
+
+
+.footer-distributed h3{
+
+  color:  #ffffff;
+
+  font: normal 36px 'Open Sans', cursive;
+
+  margin: 0;
+
+}
+
+
+
+.footer-distributed h3 span{
+
+  color:  lightseagreen;
+
+}
+
+
+
+/* Footer links */
+
+
+
+.footer-distributed .footer-links{
+
+  color:  #ffffff;
+
+  margin: 20px 0 12px;
+
+  padding: 0;
+
+}
+
+
+
+.footer-distributed .footer-links a{
+
+  display:inline-block;
+
+  line-height: 1.8;
+
+  font-weight:400;
+
+  text-decoration: none;
+
+  color:  inherit;
+
+}
+
+
+
+.footer-distributed .footer-company-name{
+
+  color:  #222;
+
+  font-size: 14px;
+
+  font-weight: normal;
+
+  margin: 0;
+
+}
+
+
+
+/* Footer Center */
+
+
+
+.footer-distributed .footer-center{
+
+  width: 35%;
+
+}
+
+
+
+.footer-distributed .footer-center i{
+
+  background-color:  #33383b;
+
+  color: #ffffff;
+
+  font-size: 25px;
+
+  width: 38px;
+
+  height: 38px;
+
+  border-radius: 50%;
+
+  text-align: center;
+
+  line-height: 42px;
+
+  margin: 10px 15px;
+
+  vertical-align: middle;
+
+}
+
+
+
+.footer-distributed .footer-center i.fa-envelope{
+
+  font-size: 17px;
+
+  line-height: 38px;
+
+}
+
+
+
+.footer-distributed .footer-center p{
+
+  display: inline-block;
+
+  color: #ffffff;
+
+  font-weight:400;
+
+  vertical-align: middle;
+
+  margin:0;
+
+}
+
+
+
+.footer-distributed .footer-center p span{
+
+  display:block;
+
+  font-weight: normal;
+
+  font-size:14px;
+
+  line-height:2;
+
+}
+
+
+
+.footer-distributed .footer-center p a{
+
+  color:  lightseagreen;
+
+  text-decoration: none;;
+
+}
+
+
+
+.footer-distributed .footer-links a:before {
+
+  content: "|";
+
+  font-weight:300;
+
+  font-size: 20px;
+
+  left: 0;
+
+  color: #fff;
+
+  display: inline-block;
+
+  padding-right: 5px;
+
+}
+
+
+
+.footer-distributed .footer-links .link-1:before {
+
+  content: none;
+
+}
+
+
+
+/* Footer Right */
+
+
+
+.footer-distributed .footer-right{
+
+  width: 20%;
+
+}
+
+
+
+.footer-distributed .footer-company-about{
+
+  line-height: 20px;
+
+  color:  #92999f;
+
+  font-size: 13px;
+
+  font-weight: normal;
+
+  margin: 0;
+
+}
+
+
+
+.footer-distributed .footer-company-about span{
+
+  display: block;
+
+  color:  #ffffff;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.footer-distributed .footer-icons{
+
+  margin-top: 25px;
+
+}
+
+
+
+.footer-distributed .footer-icons a{
+
+  display: inline-block;
+
+  width: 35px;
+
+  height: 35px;
+
+  cursor: pointer;
+
+  background-color:  #33383b;
+
+  border-radius: 2px;
+
+
+
+  font-size: 20px;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  line-height: 35px;
+
+
+
+  margin-right: 3px;
+
+  margin-bottom: 5px;
+
+}
+
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+
+
+@media (max-width: 880px) {
+
+
+
+  .footer-distributed{
+
+    font: bold 14px sans-serif;
+
+  }
+
+
+
+  .footer-distributed .footer-left,
+
+  .footer-distributed .footer-center,
+
+  .footer-distributed .footer-right{
+
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+
+  }
+
+
+
+  .footer-distributed .footer-center i{
+
+    margin-left: 0;
+
+  }
+
+
+
+}
+
+.pa{
+
+  filter: invert(100%);
+
+}
+
+.ko{
+
+  border-right-color: orange;
+
+  color:red;
+
+}
+	</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <!-- Google Fonts -->
+
+    <link
+
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+
+      rel="stylesheet"/>
+
+      <style>
+
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+      </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+          <a href="#home" id="logo"><img src="images\ieeelogo1.png" alt="" class="logo"></a>
+
+          <i class="fas fa-bars" id="ham-menu"></i>
+
+          <ul id="nav-bar">
+
+            <li>
+
+              <a href="index.html">Home</a>
+
+            </li>
+
+            <li>
+
+              <a href="about.html">About</a>
+
+            </li>
+
+            <li>
+
+              <a href="event.html">Event</a>
+
+            </li>
+     <li>
+
+              <a href="news.html">News</a>
+
+            </li>
+		
+            <li>
+
+              <a href="contact\contact.html">Contact-Us</a>
+
+            </li>
+
+	 <li>
+
+              <a href="registration form\reg.html">Registration</a>
+
+            </li>
+           
+            <li>
+
+              <a href="Team.html">Team</a>
+
+            </li>
+
+
+
+            <li>
+
+              <a href="wie\index.html">WIE</a>
+
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </header>
+
+      <div class="con">
+
+        <div class="img">
+
+       <img src="images\5927911.gif" alt="" height="400px" width="100%" class="bg">
+
+    </div>
+
+        </div>
+
+       </div>
+
+       <div class="wp">
+
+       <center><h1 id="io">About-Us</h1></center>
+
+    </div>
+
+       <div class="about">
+
+            <div class="ab">
+
+                <div class="lop">
+
+                <center><img src="images\ieeelogo1.png" alt="" height="200px" width="200px" class="lop" style="border:3px solid green;border-radius: 50%;background:linear-gradient(to top,red,purple);"></center>
+
+            </div>
+
+            <div class="red">
+
+                <p>
+
+            IEEE-SFIT student branch endeavours to foster technical learning and instil interpersonal competence for the overall personality development.
+
+               To render a platform to explore divergent scope of learning, to kindle interest for new technologies, to actuate innovative thinking and to be the future technical pioneers of the society
+
+               The Institute of Electrical and Electronics Engineers (IEEE) is a professional association headquartered in New York City that is dedicated to advancing technological innovation and excellence.The IEEE-SFIT student branch functions @SFIT and the purpose of the organisation is to achieve overall development of students
+
+           </p>
+
+        </div>
+
+       </div>
+
+   </div>
+
+   <div>
+
+    <div class="wp">
+
+       <center style="margin-top: 30px;"><h1>Upcoming-Event</h1></center>
+
+    </div> 
+
+    <div class="e">
+
+       <div class="slideshow-container">
+
+
+
+            <!-- Full-width images with number and caption text -->
+
+            <div class="mySlides fade">
+
+              <div class="numbertext">1 / 3</div>
+
+              <center><a href="wie/event1.html">
+
+            <img src="wie/images/event1.jpg" width="100%" class="img1">
+	    
+
+
+
+          </a><div class="text">RADIANT RUMBLE</div></center>
+
+                    </div>
+
+          
+
+            <div class="mySlides fade">
+
+              <div class="numbertext">2 / 3</div>
+
+              <img src="images\201w (1).webp" style="width:100%" class="img1">
+
+              <div class="text">Caption Two</div>
+
+            </div>
+
+          
+
+            <div class="mySlides fade">
+
+              <div class="numbertext">3 / 3</div>
+
+              <img src="images\5927911.gif" style="width:100%" class="img1">
+
+              <div class="text">Caption Three</div>
+
+            </div>
+
+          
+
+            <!-- Next and previous buttons -->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+          <br>
+
+          </div>
+
+        </div>
+
+        <div class="core">
+
+            <div class="c">
+
+                <h1>Core-Team</h1>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <div class="our-team">
+
+                  <div class="picture">
+
+                    <img class="img-fluid" src="ppl\dak.jpg">
+
+                  </div>
+
+                  <div class="team-content">
+
+                    <h3 class="name">Ms. Dakshata Panchal</h3>
+
+                    <h4 class="title">Convenor</h4>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <div class="our-team">
+
+                  <div class="picture">
+
+                    <img class="img-fluid" src="ppl\valentina.jpg">
+
+                  </div>
+
+                  <div class="team-content">
+
+                    <h3 class="name">Ms. Valentina Rani</h3>
+
+                    <h4 class="title">Co-Convenor</h4>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <div class="our-team">
+
+                  <div class="picture">
+
+                    <img class="img-fluid" src="ppl\Copy of Vedant Makwana_.jpg">
+
+                  </div>
+
+                  <div class="team-content">
+
+                    <h3 class="name">Vedant Makwana</h3>
+
+                    <h4 class="title">Chairperson</h4>
+
+                  </div>
+
+
+
+                </div>
+
+              </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <div class="our-team">
+
+                  <div class="picture">
+
+                    <img class="img-fluid" src="ppl\Copy of Chinmay_Vice-Chairperson.jpg">
+
+                  </div>
+
+                  <div class="team-content">
+
+                    <h3 class="name">Chinmay Joshi</h3>
+
+                    <h4 class="title">Vice Chairperson</h4>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+            <div class="our-team">
+
+              <div class="picture">
+
+                <img class="img-fluid" src="ppl\Copy of Atmik Shetty_ IEEE GS.jpg">
+
+              </div>
+
+              <div class="team-content">
+
+                <h3 class="name">Atmik Shetty</h3>
+
+                <h4 class="title">General Secretary</h4>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+        <div class="our-team">
+
+          <div class="picture">
+
+            <img class="img-fluid" src="ppl\Copy of AnishShetty_treasurer.jpg">
+
+          </div>
+
+          <div class="team-content">
+
+            <h3 class="name">Anish Shetty</h3>
+
+            <h4 class="title">Treasurer</h4>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+    <div class="our-team">
+
+      <div class="picture">
+
+        <img class="img-fluid" src="ppl\Copy of Krishna yadav -webmaster-TEITB.jpg">
+
+      </div>
+
+      <div class="team-content">
+
+        <h3 class="name">Krishna Yadav</h3>
+
+        <h4 class="title">Webmaster</h4>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+    <div class="our-team">
+
+      <div class="picture">
+
+        <img class="img-fluid" src="ppl\Copy of Ralph_Carvalho__Webmaster.jpg">
+
+      </div>
+
+      <div class="team-content">
+
+        <h3 class="name">Ralph Carvalho</h3>
+
+        <h4 class="title">Webmaster</h4>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<footer class="footer-distributed">
+
+
+
+      <div class="footer-left">
+
+
+
+        <img src="images\ieeelogo1.png" alt="" height="100px" width="200px">
+
+
+
+        <p class="footer-links">
+
+          <a href="index.html" class="link-1">Home</a>
+
+
+          <a href="Team.html" class="link-1"> Team</a>
+          
+
+          <a href="wie\index.html">WIE</a>
+
+        
+
+          <a href="about.html">About-Us</a>
+
+        
+
+          <a href="event.html">Event</a>
+
+          
+
+     
+          
+
+
+
+        </p>
+
+
+
+        <p class="footer-company-name">OFFICIAL SITE OF IEEE  COPY RIGHT © 2023</p>
+
+        <p class="footer-company-name" ><strong>Design By:-</strong><button class="ko"><a href="https://mediafiles.botpress.cloud/d1f58a79-1971-4532-9ac6-f8969fab63ad/webchat/bot.html">Chatify</a>Krishna Yadav</button><button class="ko">Ralph Carvalho</button>
+
+        </p>
+
+      </div>
+
+
+
+      <div class="footer-center">
+
+
+
+        <div>
+
+          <i class="fa fa-map-marker"></i>
+
+          <p><span> Mount Poinsur, S.V.P. Road, Borivali (West)</span></p>
+
+        </div>
+
+
+
+        <div>
+
+          <i class="fa fa-phone"></i>
+
+          <p>8788963091</p>
+
+        </div>
+
+
+
+        <div>
+
+          <i class="fa fa-envelope"></i>
+
+          <p><a href="mailto:ieeesfitsb@gmail.com">ieeesfitsb@gmail.com</a></p>
+
+        </div>
+
+
+
+      </div>
+
+
+
+      <div class="footer-right">
+
+
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.469648980777!2d72.8531133687846!3d19.243673033703733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b13affffffff%3A0xfd071f1d3a7844ef!2sSt.%20Francis%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1692723900735!5m2!1sen!2sin" width="250px" height="150px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="pa"></iframe>
+
+        <div class="footer-icons">
+
+
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+
+          <a href="#"><i class="fa fa-twitter"></i></a>
+
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+
+          <a href="#"><i class="fa fa-github"></i></a>
+
+          <a href="#"><i class="fa fa-instagram"></i></a>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </footer>
+
+         <!-- Script -->
+      <script src="script.js"></script>
+
+  
+
+</body>
+
+</html>

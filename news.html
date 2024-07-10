@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Pop Section</title>
+   <style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Add more styles as needed */
+   </style>
+   <script>
+    // script.js
+document.addEventListener("DOMContentLoaded", function () {
+    const newsList = document.getElementById("news-list");
+    const popList = document.getElementById("pop-list");
+
+    // Sample data (you can fetch data from an API)
+    const newsData = ["News 1", "News 2", "News 3"];
+    const popData = ["Pop 1", "Pop 2", "Pop 3"];
+
+    // Function to populate the lists
+    function populateList(list, data) {
+        data.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            list.appendChild(li);
+        });
+    }
+
+    // Populate the news and pops sections
+    populateList(newsList, newsData);
+    populateList(popList, popData);
+});
+   </script>
+</head>
+<body>
+    <header>
+        <h1>News and Pop Section</h1>
+    </header>
+    <section class="news">
+        <h2>Fr</h2>
+        <ul id="news-list">
+            <!-- News articles will be dynamically added here -->
+        </ul>
+    </section>
+    <section class="pop">
+        <h2>Pops</h2>
+        <ul id="pop-list">
+            <!-- Pop items will be dynamically added here -->
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
