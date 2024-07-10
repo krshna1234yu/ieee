@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <STYLE>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-image: url(2.jpg);
+    background-size: cover;
+}
+div.register{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 600px;
+    width: 50%;
+    margin-left:25%;
+    border-radius: 10%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    color: #ffff;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label, input, select {
+    display: block;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#receipt {
+    text-align: left;
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+.class{
+    height: 600px;
+    width: 100%;
+
+}
+.l{
+    font-size: 15px;
+    color:red;
+
+}
+.l:hover{
+    transform: rotate3d(30deg);
+    color:red;
+
+}
+    </STYLE>
+</head>
+<body>
+    <div class="class">
+        <div class="register">
+    <h2>Registration Form</h2>
+    <form id="registrationForm" method="post" action="https://script.google.com/macros/s/AKfycbwSthai-SRH5n7ClMC7cg_eP3NJ3lHfj5m8ZrA5GhwqeYKfu7-mh2FQ0I2hmQdNVal5Mg/exec">
+        <label for="name" class="l">Name:</label>
+        <input type="text" id="name" name="name" placeholder="IEEE"><br>
+
+        <label for="pid" class="l">PID:</label>
+        <input type="number" id="pid" name="pid" placeholder="21124" required><br>
+
+        <label for="email" class="l">Email:</label>
+        <input type="email" id="email" name="email"  placeholder="IEEE@gmail.com" required><br>
+
+        <label for="contact" class="l">Contact No:</label>
+        <input type="tel" id="contact" name="contact" placeholder="1234567890" required><br>
+
+        <label for="branch" class="l">Branch:</label>
+        <select id="branch" name="branch"  required>
+            <option value="TE-IT">TE-IT</option>
+            <option value="TE-CMPN">TE-CMPN</option>
+            <option value="TE-EXTC">TE-EXTC</option>
+            <option value="TE-ELEC">TE-ELEC</option>
+            <option value="TE-MECH">TE-MECH</option>
+            <option value="SE-EXTC">SE-EXTC</option>
+            <option value="SE-IT">SE-IT</option>
+            <option value="SE-CMPN">SE-CMPN</option>
+            <option value="SE-MECH">SE-MECH</option>
+            <option value="SE-ELEC">SE-ELEC</option>
+            <option value="BE-IT">BE-IT</option>
+            <option value="BE-EXTC">BE-EXTC</option>
+            <option value="BE-MECH">BE-MECH</option>
+            <option value="BE-ELEC">BE-ELEC</option>
+            <option value="BE-CMPN">BE-CMPN</option>
+        </select><br>
+        <label for="gender" class="l">Gender:</label>
+        <select id="gender"  name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+        <input type="submit" value="submit" id="submit" class="l">
+    </form>
+</div>
+</div>
+</body>
+</html>

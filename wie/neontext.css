@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+
+body {
+
+            overflow-x: hidden;
+	    background-color: black;
+            color: whitesmoke;
+            font-family: 'Cabin Sketch', cursive;
+  }
+
+  
+
+  .orangeglow {
+
+    color: #fff;
+
+    text-align: center;
+
+    animation: glow 1s ease-in-out infinite alternate;
+
+    text-shadow: 0 0 0 #fff, 0 0 10px #f2ff00, 0 0 10px #ff0000, 0 0 10px #f2ff00, 0 0 20px #ff0000, 0 0 20px #f2ff00, 0 0 30px #ff0000;
+
+  }
+
+
+
+  .redglow {
+
+    color: #fff;
+
+    text-align: center;
+
+    animation: glow 1s ease-in-out infinite alternate;
+
+    text-shadow: 0 0 0 #fff, 0 0 10px #ff0000, 0 0 10px #CC5500, 0 0 10px #ff0000, 0 0 20px #CC5500, 0 0 20px #ff0000, 0 0 30px #CC5500;
+
+  }
+
+
+
+  .greenglow {
+
+    color: #fff;
+
+    text-align: center;
+
+    animation: glow 1s ease-in-out infinite alternate;
+
+    text-shadow: 0 0 0 #fff, 0 0 10px #90EE90, 0 0 10px #228B22, 0 0 10px #90EE90, 0 0 20px #228B22, 0 0 20px #90EE90, 0 0 30px #228B22;
+
+  }
+
+
+
+  .yellowglow {
+
+    color: #fff;
+
+    text-align: center;
+
+    animation: glow 1s ease-in-out infinite alternate;
+
+    text-shadow: 0 0 0 #fff, 0 0 10px #fffacd, 0 0 10px #FFD300, 0 0 10px #fffacd, 0 0 20px #FFD300, 0 0 20px #fffacd, 0 0 30px #FFD300;
+
+  }
+
+
+
+  .blueglow {
+
+    color: #fff;
+
+    text-align: center;
+
+    animation: glow 1s ease-in-out infinite alternate;
+
+    text-shadow: 0 0 0 #fff, 0 0 10px #00FFFF, 0 0 10px #0000FF, 0 0 10px #00FFFF, 0 0 20px #0000FF, 0 0 20px #00FFFF, 0 0 30px #0000FF;
+
+  }
+
+
+
+  .whiteglow {
+
+    color: #fff;
+
+    text-align: center;
+
+    animation: glow 1s ease-in-out infinite alternate;
+
+    text-shadow: 0 0 0 #fff, 0 0 0 whitesmoke, 0 0 0 lightgray, 0 0 0 whitesmoke, 0 0 10px lightgray, 0 0 10px whitesmoke, 0 0 10px lightgray;
+
+  }
+
+  .purpleglow {
+
+    color: #fff;
+
+    text-align: center;
+
+    animation: glow 1s ease-in-out infinite alternate;
+
+    text-shadow: 0 0 0 #fff, 0 0 10px #BF40BF, 0 0 10px #800080, 0 0 10px #BF40BF, 0 0 20px #800080, 0 0 20px #BF40BF, 0 0 30px #800080;
+  }
+  .pinkglow {
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 0 #fff, 0 0 0 hotpink, 0 0 0 hotpink, 0 0 10px hotpink, 0 0 20px hotpink, 0 0 30px hotpink, 0 0 40px hotpink;
+  }
+.bronzeglow {
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 0 #fff, 0 0 0 brown, 0 0 0 yellow, 0 0 0 brown, 0 0 10px yellow, 0 0 10px brown, 0 0 10px yellow;
+  }
+  
+  .silverglow {
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 0 #fff, 0 0 0 grey, 0 0 0 lightgray, 0 0 0 grey, 0 0 10px lightgray, 0 0 10px grey, 0 0 10px lightgray;
+  }
